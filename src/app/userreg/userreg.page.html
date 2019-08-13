@@ -1,0 +1,83 @@
+<ion-content color="primary" padding>
+  <ion-row color="primary" justify-content-center>
+      <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+        <div text-center>
+          <h3 style ="color:white">Sign Up </h3>
+        </div>
+        </ion-col>
+        </ion-row>
+
+    <form #form="ngForm" >
+      <ion-row justify-content-center>
+          <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+              <ion-card class="divclass">
+                  <ion-grid >
+                    <ion-row color="primary" justify-content-center>
+                      <ion-col align-self-center  style="margin: 10px">
+                        <div >
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <ion-label><h3>Name</h3></ion-label>
+                          <ion-item>
+                            <ion-input name="name" type="text" placeholder="your name" ngModel required></ion-input>
+                          </ion-item>
+                          <br>
+                          <ion-label><h3>Email</h3></ion-label>
+                          <ion-item>
+                            <ion-input name="email" type="email" placeholder="abcd@gmail.com" ngModel required></ion-input>
+                          </ion-item>
+                          <br>
+                          <ion-label><h3>Address</h3></ion-label>
+                          <ion-item>
+                            <ion-input name="address" type="text" placeholder="Address" ngModel required></ion-input>
+                          </ion-item>
+                          <br>
+                          <ion-label><h3>Phone Number</h3></ion-label>
+                          <ion-item>
+                            <ion-input name="phone" type="phone" placeholder="Phone" ngModel required></ion-input>
+                          </ion-item>
+                          <br>
+                        
+                          <ion-label><h3>Password</h3></ion-label>
+                          <ion-item>
+                            <ion-input name="password" type="password" placeholder="Password" ngModel required></ion-input>
+                          </ion-item>
+                          <br>
+                          <ion-label><h3>Confirm Password</h3></ion-label>
+                          <ion-item>
+                            <ion-input name="password" type="text" placeholder="renter Password" ngModel required></ion-input>
+                          </ion-item>
+                        </div>
+                        <div padding>
+                          <ion-button size="large" class="button-text" type="submit" [disabled]="form.invalid" expand="block">Signup</ion-button>
+                        </div>
+                      </ion-col>
+              
+                    </ion-row>
+                    <ion-row justify-content-center>
+                    <ion-col align-self-center>
+                      <div text-center class="changeColor">
+                        <label style="color: blue" routerLink='/home'>  Signin as user 
+                        </label> 
+                          </div>
+                    </ion-col>  
+                    <ion-col align-self-center>
+                        <div text-center class="changeColor">
+                          <label style="color: blue" routerLink='/userhome/tabs/Explore'>  Signin as guest 
+                          </label> 
+                            </div>
+                      </ion-col>  
+                  </ion-row>
+                  </ion-grid>
+                </ion-card>
+          </ion-col>
+
+      </ion-row>
+      
+       
+      </form>
+
+
+</ion-content>

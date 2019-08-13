@@ -1,0 +1,7 @@
+{
+  "name": "Sobomart",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

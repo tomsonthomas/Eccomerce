@@ -1,0 +1,15 @@
+ion-content {
+    --background: none;
+    background-image: url('/assets/images/white_linear.svg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.item{
+    padding-left: 50px;
+    
+}
+ion-item{
+    --background:none;
+}

@@ -1,0 +1,70 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Categories</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-grid no-padding>
+    <ion-row  no-padding>
+        <ion-col size="6" size-sm="4" offset-sm="2" no-padding >
+          <ion-card class="card_design" (click)="openProperty('1')"  >
+            <ion-card-content>
+              <ion-img class="image" src='../../assets/images/propeties.png'>
+              </ion-img>
+              <ion-card-title style="text-align: center">Properties</ion-card-title>
+            </ion-card-content>
+          </ion-card>
+          </ion-col>
+          <ion-col size="6" size-sm="4"  no-padding>
+              <ion-card class="card_design" (click)="openProperty('2')">
+                <ion-card-content>
+                  <ion-img class="image" src='../../assets/images/car-flat.png'></ion-img>
+                  <ion-card-title style="text-align: center">Cars</ion-card-title>
+                </ion-card-content>
+              </ion-card>
+    
+              </ion-col>
+    </ion-row>
+    <ion-row no-padding>
+        <ion-col size="6"  size-sm="4" offset-sm="2" no-padding >
+          <ion-card class="card_design" (click)="openProperty('3')">
+            <ion-card-content>
+              <ion-img class="image" src='../../assets/images/motorcycle.png'>
+              </ion-img>
+              <ion-card-title style="text-align: center">Bikes</ion-card-title>
+            </ion-card-content>
+          </ion-card>
+          </ion-col>
+          <ion-col size="6" size-sm="4" no-padding>
+              <ion-card class="card_design" (click)="openProperty('4')">
+                <ion-card-content>
+                  <ion-img class="image" src='../../assets/images/bed-bedroom-sleep-place-furniture-512.png'></ion-img>
+                  <ion-card-title style="text-align: center">Furniture</ion-card-title>
+                </ion-card-content>
+              </ion-card>
+    
+              </ion-col>
+    </ion-row>
+    <ion-row no-padding>
+        <ion-col size="6"  size-sm="4" offset-sm="2" no-padding >
+          <ion-card class="card_design" (click)="openProperty('5')">
+            <ion-card-content>
+              <ion-img class="image" src='../../assets/images/devices.png'>
+              </ion-img>
+              <ion-card-title style="text-align: center">Electronics</ion-card-title>
+            </ion-card-content>
+          </ion-card>
+          </ion-col>
+          <ion-col size="6" size-sm="4" no-padding>
+              <ion-card class="card_design" (click)="openProperty('6')">
+                <ion-card-content>
+                  <ion-img class="image" src='../../assets/images/mobile-icon-10.png'></ion-img>
+                  <ion-card-title style="text-align: center">Mobile</ion-card-title>
+                </ion-card-content>
+              </ion-card>
+    
+              </ion-col>
+    </ion-row>
+    
+  </ion-grid>
+</ion-content>

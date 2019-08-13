@@ -1,0 +1,31 @@
+ion-content{
+    --background:grey;
+  //  --background: none;
+  //  background-image: url('/assets/images/brightgreenbackground.jpg');
+    // background-position: center top;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+} 
+ ion-card {
+            background-color:ivory;
+            width: 100%;
+            margin: 0;
+            margin-bottom: 10px;
+            position: relative;
+            top: -30px;
+        }
+        
+        ion-card:last-child {
+            margin-bottom: 0 !important;
+        }
+
+        ion-item {
+            background-color: #fff;
+        }
+
+    .rate-title{
+        font-family:  RobotoBold;
+        text-justify: inter-word;
+        text-decoration: aquamarine;
+    }
+

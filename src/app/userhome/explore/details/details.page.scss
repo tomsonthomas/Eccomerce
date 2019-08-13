@@ -1,0 +1,17 @@
+.title{
+    font-family: 'RobotoBold'
+}
+ion-content {
+    --background: white;
+   // background-image: url('/assets/images/white_linear.svg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ion-card{
+    background-color:ivory;
+            width: 100%;
+            margin: 0;
+            margin-bottom: 10px;
+            position: relative;
+}

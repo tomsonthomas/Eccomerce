@@ -1,0 +1,36 @@
+
+
+ion-item{
+    --color:#062f77;
+}
+ion-button{
+    --background: #062f77;
+   
+}
+.button{
+    text-transform:none;
+}
+.divclass{
+    --background:#ffff;
+   --width:100px;
+   --height:100px;
+    
+}
+a{
+    color: #062f77;
+}
+
+.changeColor{
+    //width:100%;//notworking
+    //background-color: white; //not working
+
+
+       --background:green !important;
+}
+h3{
+    font-style: bold;
+    color: black;
+}
+ion-card{
+ border-radius: 20px;
+}

@@ -1,0 +1,19 @@
+.image{
+    height: 150px;
+}
+.card_design{
+    background-color: darkkhaki;
+    border-radius: 10px;
+}
+ion-content {
+    --background: none;
+    background-image: url('/assets/images/white_linear.svg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ion-card-title{
+    font-size: 15px;
+    font-style: bold;
+
+}

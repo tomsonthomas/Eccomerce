@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar color="primary">
+   <ion-buttons slot="start">
+      <ion-back-button defaultHref='userhome/tabs/discover'></ion-back-button>
+   </ion-buttons>
+    <ion-title>Sub Category</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list *ngFor='let items of subCategory'>
+    <ion-item (click)="openDetailsList(1)">
+      {{items.name}}
+    </ion-item>
+  </ion-list> 
+
+</ion-content>

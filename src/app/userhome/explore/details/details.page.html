@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar color="primary"> 
+      <ion-buttons slot="start">
+          <ion-back-button defaultHref="/userhome/tabs/Explore"></ion-back-button>
+        </ion-buttons>
+    <ion-title class="title">{{ads.title}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+<ion-card>
+
+      <img [src]='ads.imgurl'/>
+            <ion-text style="font-family: RobotoBold"><b>{{ads.rate}}</b></ion-text>
+            <br>
+            <ion-text style="font-family: RobotoBold"><b>{{ads.title}}</b></ion-text>
+            <p style="font-family: RobotoLight">{{ads.desc}}</p>
+          
+            <ion-text style="font-family: RobotoLight"><ion-icon name="pin" color="primary"></ion-icon>{{ads.location}}</ion-text>
+            <br>&nbsp;
+            <ion-text style="font-family: RobotoLight">Phone:{{ads.phone}}</ion-text>
+            <hr color="blue">
+            <ion-label style="font-family: RobotoBold" >Comments...</ion-label>
+            <ion-grid *ngFor='let comment of comments'>
+            
+                <ion-label style="font-family: RobotoMedium"><b><i>Rahul</i></b></ion-label>
+                <br>
+                 <ion-label  style="font-family: Roboto Light;position: relative;left: 10%;"><i>{{comment.title}}</i></ion-label>
+                 <div style="position: relative;left: 40%;color: cadetblue"><ion-label>Owners Reply</ion-label></div>
+            </ion-grid>
+            <div style="text-align: center;"> <ion-button (click)="callNow(8301097904)" size="small" style="width: 30%">Call Now</ion-button></div>
+           
+
+
+</ion-card>
+</ion-content>

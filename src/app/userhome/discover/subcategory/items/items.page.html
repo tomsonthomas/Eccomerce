@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button [defaultHref]="['userhome','tabs','discover','subcategory',subID]"></ion-back-button>
+    </ion-buttons>
+    <ion-title   ><ion-searchbar  noline  showCancelButton="always" animated showCancelButton="focus" (ionInput)="searchItems($event)"></ion-searchbar></ion-title>
+   
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen parallax-header >
+    <div class="main-content">
+        <ion-card *ngFor="let card of newAds" [routerLink]="['/',
+        'userhome',
+        'tabs',
+        'discover','itemdetails',card.id]" >
+          <img [src]="card.imgurl" />
+          <ion-card-content class="rate-title">
+              <div >{{card.rate}}</div>
+              <div class="rate-title">{{card.title}}</div>
+         
+            <ion-card-subtitle class="ion-text-justify" style="text-transform: none;font-family: RobotoLight">
+                {{card.desc}}
+              </ion-card-subtitle>
+              <ion-row>
+                  <ion-col>
+                    <button ion-button icon-left clear small color="white">
+                      <ion-icon name="pin" color="primary"></ion-icon>
+                      <div>{{card.location}}</div>
+                    </button>
+                  </ion-col>
+                </ion-row>
+           </ion-card-content>
+          
+            <!-- <ion-col>
+              <button ion-button icon-left clear small>
+                <ion-icon name="text"></ion-icon>
+                <div>4 Comments</div>
+              </button>
+            </ion-col> -->
+         
+
+        </ion-card>
+
+    </div>
+
+</ion-content>

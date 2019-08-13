@@ -1,0 +1,85 @@
+<ion-content color="primary" padding>
+    <ion-row color="primary" justify-content-center style="margin-bottom: 60px">
+        <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+          <div text-center>
+            <h3 style ="color:white">Sign In </h3>
+          </div>
+          </ion-col>
+          </ion-row>
+  
+      <form #form="ngForm" (ngSubmit)="login(form)">
+        <ion-row justify-content-center>
+            <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+                <ion-card class="divclass">
+                    <ion-grid >
+                      <ion-row color="primary" justify-content-center>
+                        <ion-col align-self-center  style="margin: 10px">
+                          <div >
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <ion-label><h3>Email</h3></ion-label>
+                            <ion-item>
+                              <ion-input name="email"
+                               type="email" 
+                               placeholder="your@email.com" 
+                               ngModel
+                               email="true"
+                               required
+                               #emailcontrol="ngModel"
+                               ></ion-input>
+                            </ion-item>
+                            <ion-item *ngIf="!emailcontrol.valid && emailcontrol.touched" lines="none">
+                              <ion-label><p style="color: red">enter your email adddress</p></ion-label>
+                            </ion-item>
+                            <br>
+                            <ion-label><h3>Password</h3></ion-label>
+                            <ion-item>
+                              <ion-input name="password"
+                               type="password" 
+                               placeholder="Password" 
+                               ngModel
+                                required
+                                #passControll="ngModel"></ion-input>
+                            </ion-item>
+                            <ion-item lines="none" *ngIf="!passControll.valid && passControll.touched">
+                              <ion-label><p style="color: red">Enter password</p></ion-label>
+                            </ion-item>
+                          </div>
+                          <div padding>
+                            <ion-button size="large" type="submit" [disabled]="form.invalid" expand="block">Signin</ion-button>
+                          </div>
+                        </ion-col>
+                
+                      </ion-row>
+                      <ion-row justify-content-center>
+                      <ion-col align-self-center>
+                        <div text-center class="changeColor">
+                          <label style="color: blue" routerLink='../sellerlogin'>  Signin as Seller 
+                          </label> 
+                            </div>
+                      </ion-col>  
+                      <ion-col align-self-center>
+                          <div text-center class="changeColor">
+                            <label style="color: blue" routerLink='/userhome/tabs/Explore'>  Signin as guest 
+                            </label> 
+                              </div>
+                        </ion-col>  
+                    </ion-row>
+                    <ion-row>
+                        <ion-col >
+                            <ion-button class="button" size="large"   type="button" expand="block" routerLink='/userreg' >Signup</ion-button>
+                        </ion-col>  
+                        <ion-col align-self-center >
+                            <ion-button style="--background: white;color: black;text-transform:none" size="large" type="button" expand="block">Signin</ion-button>
+                          </ion-col>  
+                      </ion-row>
+                    </ion-grid>
+                  </ion-card>
+            </ion-col>
+        </ion-row>
+        </form>
+  </ion-content>
+  
+  
