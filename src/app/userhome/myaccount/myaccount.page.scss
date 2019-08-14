@@ -1,13 +1,13 @@
 ion-content {
-    --background: none;
-    background-image: url('/assets/images/white_linear.svg');
+    --background:#0494f3fa ;
+   // background-image: url('/assets/images/bruise_blue.jpg');
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .item{
-    padding-left: 50px;
+    padding-left: 15%;
     
 }
 ion-item{
